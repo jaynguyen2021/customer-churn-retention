@@ -1,0 +1,14 @@
+# Dataset kept locally
+data/Telco_customer_churn.xlsx
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+
+# Python temporary files
+__pycache__/
+*.pyc
+# R history
+.Rhistory

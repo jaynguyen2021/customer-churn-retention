@@ -1,0 +1,13 @@
+{
+  "policy_version": "retention_policy_v1_0_0",
+  "model_version": "customer_churn_gb_v1_0_0",
+  "binary_threshold": 0.346162,
+  "call_threshold": 0.372611,
+  "email_threshold": 0.165677,
+  "calibration_method": "None",
+  "action_order": [
+    "Priority retention call",
+    "Email only",
+    "No immediate action"
+  ]
+}

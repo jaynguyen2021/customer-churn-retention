@@ -321,18 +321,17 @@ A synthetic drifted dataset was created to confirm that the monitoring rules cou
 
 The notebook also separates data drift from delayed model-performance monitoring. Actual performance can only be measured after the true churn outcomes become available.
 
-## Project Limitations
+## Limitations and Next Steps
 
-This project uses a public sample dataset rather than live company data.
+This project uses a public sample dataset from one telecommunications company, so the results may not generalize directly to other companies or future customer populations.
 
-The model estimates churn risk, but it does not estimate whether a retention action will change a customer's decision.
+The model predicts which customers are likely to churn, but it does not estimate whether a retention action will change a customer's behavior.
 
-The retention policy is based on model scores and workload assumptions. A real company should test the policy with a controlled experiment.
+The call and email policy is based on model scores and workload assumptions. A real company would also need verified contact costs, offer costs, customer value, and retention outcomes.
 
-The notebook is also a reconstruction of a previously completed workflow. It preserves the original split and modeling decisions, so it should not be treated as a second independent validation study.
+A useful next step would be a controlled A/B test that records which customers receive each retention action and whether they remain. With randomized treatment data, an uplift model could identify customers who are most likely to stay because of the intervention, rather than only identifying customers with high churn risk.
 
-The next useful step would be to evaluate the locked model on a new future customer cohort and measure the effect of the retention actions.
-
+The locked model should also be evaluated on a new future customer cohort, with continued monitoring of calibration, feature drift, prediction drift, and business outcomes.
 ## Repository Structure
 
 ```text
